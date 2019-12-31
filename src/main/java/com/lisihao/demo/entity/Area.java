@@ -5,7 +5,7 @@ import org.springframework.beans.factory.annotation.Value;
 import java.util.Date;
 
 /**
- * 区域表 area
+ * 区域表 area entity
  */
 public class Area {
     //主键id
