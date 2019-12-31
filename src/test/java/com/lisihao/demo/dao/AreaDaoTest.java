@@ -26,6 +26,7 @@ class AreaDaoTest {
     }
 
     @Test
+    @Ignore
     public void queryAreaById(){
         Area area = areaDao.queryAreaById(1);
         assertEquals("area_one", area.getAreaName());
@@ -42,6 +43,7 @@ class AreaDaoTest {
     }
 
     @Test
+    @Ignore
     public void updateArea() {
         Area area = new Area();
         area.setAreaId(4);
@@ -52,6 +54,7 @@ class AreaDaoTest {
     }
 
     @Test
+    @Ignore
     public void deleteArea() {
         int result = areaDao.deleteArea(3);
         assertEquals(1, result);

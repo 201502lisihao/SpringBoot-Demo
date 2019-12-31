@@ -2,6 +2,7 @@ package com.lisihao.demo.service.impl;
 
 import com.lisihao.demo.entity.Area;
 import com.lisihao.demo.service.AreaService;
+import org.junit.Ignore;
 import org.junit.jupiter.api.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -22,18 +23,21 @@ class AreaServiceImplTest {
     private AreaService areaServiceImpl;
 
     @Test
+    @Ignore
     void getAreaList() {
         List<Area> areaList = areaServiceImpl.getAreaList();
         assertEquals(3, areaList.size());
     }
 
     @Test
+    @Ignore
     void getAreaById() {
         Area area = areaServiceImpl.getAreaById(1);
         assertEquals("area_one", area.getAreaName());
     }
 
     @Test
+    @Ignore
     void addArea() {
         Area area = new Area();
         area.setAreaName("test111");
@@ -43,6 +47,7 @@ class AreaServiceImplTest {
     }
 
     @Test
+    @Ignore
     void editArea() {
         Area area =new Area();
         area.setAreaId(10);
@@ -52,6 +57,7 @@ class AreaServiceImplTest {
     }
 
     @Test
+    @Ignore
     void deleteArea() {
         Boolean result = areaServiceImpl.deleteArea(10);
         assertEquals(true, result);
